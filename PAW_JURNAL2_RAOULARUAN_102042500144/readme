@@ -1,0 +1,9 @@
+connect.php: Berfungsi membuka jalur koneksi ke basis data MySQL
+paw_jurnal2_lms dan menyimpan objek koneksi $conn. Dimuat pada seluruh halaman utama (index.php, mata_kuliah.php, materi.php, tugas.php).
+functions.php: Menyediakan fungsi penunjang sanitasi, validasi, navigasi, dan kueri pembantu. Dimuat di bagian paling awal pada seluruh halaman utama.
+header.php & footer.php: Menyediakan komponen tata letak visual atas dan bawah secara konsisten di seluruh halaman.
+styles.css: Mengatur tampilan antarmuka visual, dimuat melalui elemen <link> pada header.php.
+index.php: Beranda utama yang membaca data statistik dan menyediakan navigasi langsung menuju pengelolaan mata kuliah, materi, dan tugas.
+mata_kuliah.php: Mengelola data induk mata kuliah. Menyediakan data ID dan nama mata kuliah yang menjadi acuan (Foreign Key) bagi berkas materi.php dan tugas.php.
+materi.php: Mengelola data materi yang terhubung ke data mata_kuliah.php.
+tugas.php: Mengelola data tugas yang terhubung ke data mata_kuliah.php.
